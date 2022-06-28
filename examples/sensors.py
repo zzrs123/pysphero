@@ -12,7 +12,7 @@ def notify_callback(data: Dict):
 
 
 def main():
-    mac_address = "aa:bb:cc:dd:ee:ff"
+    mac_address = "DB:B0:D9:EE:6C:06"
     with Sphero(mac_address=mac_address) as sphero:
         sphero.power.wake()
         sphero.sensor.set_notify(notify_callback, CoreTime, Quaternion)
