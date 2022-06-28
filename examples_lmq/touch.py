@@ -8,7 +8,7 @@ def main():
     def callback(value):
         print(value.name)
 
-    mac_address = "aa:bb:cc:dd:ee:ff"
+    mac_address = "db:b0:d9:ee:6c:06"
     with Sphero(mac_address=mac_address) as sphero:
         sphero.power.wake()
         sleep(10)
